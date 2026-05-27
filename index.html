@@ -3,10 +3,317 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>Anylogic Web Sample</title>
   </head>
   <body>
-    <p>Hello World</p>
+    <main class="main-container">
+      <section class="simulation-emulation-container">
+        <h2 class="section-title">Simulation vs. Emulation in a Nutshell</h2>
+        <p class="section-description">
+          Simulation helps you explore possibilities, optimize systems, and make
+          data-driven decisions. Emulation ensures that what's built works
+          exactly as intended, especially when dealing with real control
+          systems.
+        </p>
+
+        <section class="info-grid">
+          <div class="simulation-info">
+            <p>Simulation</p>
+            <ul>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Focuses on "How does it work?"</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Often used for strategic planning and optimization.</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span
+                  >More about the analytical side, allowing users to know more
+                  about how systems behave.</span
+                >
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span
+                  >The main goal is to find an optimal solutions in plans, the
+                  number of equipment, etc. Save time and money before
+                  committing resources or undergoing changes. Conduct different
+                  types of experiments in a risk-free environment.</span
+                >
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span
+                  >Can be used in the early stages of the project when there is
+                  no factory, production line, or equipment.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="emulation-info">
+            <p>Emulation</p>
+            <ul>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Focuses on "Does it work correctly?"</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span
+                  >Often used for system validation and control testing.</span
+                >
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span
+                  >More about the representative and validatory side, showing
+                  systems with reality physics.</span
+                >
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span
+                  >The main goal is to verify if the existing system works
+                  correctly in different cases (i.e., disruption).</span
+                >
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span
+                  >Is used only in the final stages of the project when
+                  everything is in place for equipment commissioning.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="info-use-case">
+        <h2 class="section-title">What is Best for Your Use Case?</h2>
+        <p class="section-description">
+          Whether you're planning, optimizing processes, or validating control
+          logic, understanding the right tool for the task saves time, reduces
+          cost, and minimizes efforts.
+        </p>
+
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Use Case</th>
+                <th>Simulation</th>
+                <th>Emulation</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="case">Long-term system planning</td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-ok.jpg"
+                        alt="Checkmark - well suited"
+                      />
+                    </span>
+                    <span class="text">Well-suited</span>
+                  </div>
+                </td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-cancel.jpg"
+                        alt="Cancel - not recommended"
+                      />
+                    </span>
+                    <span class="text">Non recommended or not practical</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="case">Testing control software</td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-info.jpg"
+                        alt="Info - possible with limitations"
+                      />
+                    </span>
+                    <span class="text">Possible, but with limitations</span>
+                  </div>
+                </td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-ok.jpg"
+                        alt="Checkmark - well suited"
+                      />
+                    </span>
+                    <span class="text">Well-suited</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="case">Optimizing processes</td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-ok.jpg"
+                        alt="Checkmark - well suited"
+                      />
+                    </span>
+                    <span class="text">Well-suited</span>
+                  </div>
+                </td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-info.jpg"
+                        alt="Info - possible with limitations"
+                      />
+                    </span>
+                    <span class="text">Possible, but with limitations</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="case">Bottleneck analysis</td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-ok.jpg"
+                        alt="Checkmark - well suited"
+                      />
+                    </span>
+                    <span class="text">Well-suited</span>
+                  </div>
+                </td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-info.jpg"
+                        alt="Info - possible with limitations"
+                      />
+                    </span>
+                    <span class="text">Possible, but with limitations</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="case">Testing autonomous behaviors</td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-ok.jpg"
+                        alt="Checkmark - well suited"
+                      />
+                    </span>
+                    <span class="text">Well-suited</span>
+                  </div>
+                </td>
+                <td class="suggestion">
+                  <div>
+                    <span class="icon">
+                      <img
+                        src="/assets/icon-cancel.jpg"
+                        alt="Cancel - not recommended"
+                      />
+                    </span>
+                    <span class="text">Non recommended or not practical</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="link">
+          <a href="#" class="see-all-link">See all</a>
+        </div>
+      </section>
+
+      <section class="info-tools">
+        <h2 class="section-title">AnyLogic vs. Popular Emulation Tools</h2>
+        <p class="section-description">
+          Compare key features of AnyLogic with emulation platforms to
+          understand which tool best fits your needs.
+        </p>
+
+        <div class="tools-comparison">
+          <div class="tools-features">
+            <ul>
+              <li class="active">
+                <span class="icon-circle"></span>
+                <span>Core focus</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Modeling approach</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Industries</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Visualization</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Free version</span>
+              </li>
+              <li>
+                <span class="icon-circle"></span>
+                <span>Connectivity</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tools-info">
+            <div class="tool-anylogic">
+              <p class="tool-name">AnyLogic</p>
+              <p class="tool-description">
+                Simulation of complex systems and processes, scalable from
+                single operations (factory or production line) to
+                enterprise-wide models.
+              </p>
+            </div>
+
+            <div class="tool-visual">
+              <p class="tool-name">Visual Components</p>
+              <p class="tool-description">
+                Operational dynamics in manufacturing systems
+              </p>
+            </div>
+
+            <div class="tool-emulate">
+              <p class="tool-name">Emulate3D</p>
+              <p class="tool-description">Industrial automation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
